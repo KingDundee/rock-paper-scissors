@@ -1,2 +1,2 @@
 # rock-paper-scissors
-My first JavaScript program built from scratch. 
+My first JavaScript program built from scratch.
