@@ -23,6 +23,7 @@ function getPlayerChoice() {
   while (loopSentry) {
     playerSelection = prompt("Please ENTER 'Rock', 'Paper', or 'Scissors' to PLAY!");
     if (playerSelection === null || playerSelection === "") {
+      console.log("Please make a selection!");
       continue;
     }
     else {
@@ -102,4 +103,3 @@ function game() {
   }
 }
 // TEST game
-game();
