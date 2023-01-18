@@ -84,22 +84,3 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 // console.log(playRound(getPlayerChoice(), getComputerChoice()));  // TEST
-
-// PLAY 5 consecutive rounds and keep score, declaring winner of each round and end of game
-
-function game() {
-  for (let i = 0; i < 5; i++) {
-    console.log(playRound(getPlayerChoice(), getComputerChoice()));
-    console.log(`Player score: ${playerScore} VS. Computer score: ${computerScore}`);
-  }
-  if (playerScore > computerScore) {
-    console.log("You win the game!");
-  }
-  else if (playerScore < computerScore) {
-    console.log("You lost the game!");
-  }
-  else {
-    console.log("The game is a tie!");
-  }
-}
-// TEST game
