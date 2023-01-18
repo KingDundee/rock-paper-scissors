@@ -1,21 +1,14 @@
 // script for index.html
-// INITIALIZE scores
+
 let computerScore = 0;
 let playerScore = 0;
-// SET selectArray for getComputerChoice()
+
 const selectArray = ['Rock', 'Paper', 'Scissors'];
-// GET computer selection with getComputerChoice()
+
 function getComputerChoice() {
   return selectArray[Math.floor(Math.random() * selectArray.length)];
 }
-/*
-console.log(typeof getComputerChoice());  // TEST
-console.log(getComputerChoice());  // TEST
-console.log(typeof computerScore);  // TEST
-console.log(typeof playerScore);  // TEST
-*/
 
-// GET player selection with getPlayerChoice()
 function getPlayerChoice() {
   let playerSelection;
   let loopSentry = true;
@@ -39,9 +32,7 @@ function getPlayerChoice() {
   }
   return playerSelection;
 }
-// console.log(getPlayerChoice());  // TEST
 
-// PLAY single round and declare winner & loser based on player & computer inputs
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === 'Rock') {
     if (computerSelection === 'Paper') {
@@ -83,4 +74,3 @@ function playRound(playerSelection, computerSelection) {
     }    
   }
 }
-// console.log(playRound(getPlayerChoice(), getComputerChoice()));  // TEST
