@@ -1,1 +1,127 @@
 /* stylesheet for index.html */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Audiowide', 'cursive', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: burlywood url(./images/wrinklyPaper.jpg) no-repeat fixed center / cover;
+}
+
+header {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: goldenrod;
+  border: 0.125em solid black;
+}
+
+header h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  gap: 1em;
+  padding: 1em 0;
+}
+
+main div.opponents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.opponents img {
+  width: 20em;
+  height: 20em;
+  border: 0.125em solid black;
+  border-radius: 1em;
+  object-fit: cover;
+  object-position: bottom center;
+  filter: sepia(60%);
+}
+
+div.opponents p {
+  font-size: 4em;
+}
+
+.opponents.computer, .opponents.human {
+  flex-direction: column;
+  gap: 1em;
+}
+
+.opponents.computer p, .opponents.human p {
+  font-size: 2em;
+  text-align: center;
+}
+
+main p.pregame-message {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+  background-color: goldenrod;
+}
+
+div.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4em;
+}
+
+div.buttons button {
+  min-width: 6em;
+  font-size: 2em;
+  padding: 0.125em;
+  border-radius: 0.25em;
+  background-color: blue;
+  color: gold;
+}
+
+div.buttons button:hover {
+  scale: 1.2;
+  background-color: gold;
+  color: blue;
+}
+
+p.result-message {
+  text-align: center;
+  font-size: 2em;
+}
+
+div.scores {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}
+
+footer {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background-color: goldenrod;
+  border: 0.125em solid black;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: blue;
+}

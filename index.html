@@ -6,14 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="KingDundee">
     <meta name="description" content="A simple game of rock-paper-scissors">
-    <title>Rock, Paper, Scissors</title>
+    <title>Rock, Paper, Scissors!</title>
     <link rel="stylesheet" type="text/css" href="styles.css" media="all">
     <link rel="icon" href="./images/favicon.ico">
     <script src="script.js" defer></script>
   </head>
   <body>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
+    <header>
+      <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+    <main>
+      <div class="opponents">
+        <div class="opponents computer">
+          <img src="./images/robot.jpg" alt="A little robot on treads">
+          <p>Computer Choice: </p>
+        </div>
+        <p>VS</p>
+        <div class="opponents human">
+          <img src="./images/human.jpg" alt="A human on a laptop">
+          <p>Human Choice: </p>
+        </div>
+      </div>
+      <p class="pregame-message">CHOOSE WISELY HUMAN</p>
+      <div class="buttons">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+      <p class="result-message">READY, SET, FIGHT...</p>
+      <div class="scores">
+        <div class="computer-score">Computer Score:</div>
+        <div class="player-score">Human Score:</div>
+      </div>
+    </main>
+    <footer>
+      <p>Created by <em>KingDundee</em> in conjunction with <em>The Odin Project</em></p>
+      <a href="https://www.wikihow.com/Play-Rock,-Paper,-Scissors">Game Instructions</a>
+    </footer>
   </body>
 </html>
